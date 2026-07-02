@@ -13,7 +13,7 @@ if sum==originalnum:
     print("Yes number is Armstrong")
 else:
     print("It is not")
-
+#Time Complexity of this is O(2log₁₀(N))
 
 
 #Using Extraction of digits
@@ -29,3 +29,4 @@ if total==originalnum:
     print("Number is armstrong")
 else:
     print("not")
+#Time Complexity of this is O(log₁₀(N))
