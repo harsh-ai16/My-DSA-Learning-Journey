@@ -16,7 +16,7 @@ else:
 
 
 
-
+#Using Extraction of digits
 
 a=len(str(nums))
 total=0
