@@ -20,7 +20,7 @@ for i in nums:
     dict[i]=dict.get(i,0)+1
 
 for j in m:
-    if j in dict:
+    if j in dict:#if j<1 or j>10: print("0") if nums contains element from 1 to 10 only
         print(j,dict[j])
     else:
         print(j,"0")
