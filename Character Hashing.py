@@ -19,8 +19,16 @@ for j in q:
         print(j,d[j])
     else:
         print(j,"0")
-
+#Time Complexity is O(M+n) and Space complexity is O(n)
 
 #Method 3 Using hashing and Ascii function odr()
- 
- 
+hash_list=[0]*26
+for i in s:
+    ascii_value=ord(i)
+    index=ascii_value-97
+    hash_list[index]+=1
+
+for i in q:
+    ascii_value=ord(i)
+    print(i,hash_list[ascii_value-97])
+#Time Complexity is O(M+n) and space complexity O(1)
