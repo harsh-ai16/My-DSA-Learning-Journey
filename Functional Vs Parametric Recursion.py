@@ -6,14 +6,16 @@ def func(sum,i,n):
         return
     func(sum+i,i+1,n)
 
-func(0,1,10)
+func(0,1,10) #Time complexity in parametric recursion is O(N+1)
+             #Space Complexity in  parametric recursion is O(N+1) (Stack Space)
 
 #Using Functional recursion
 def fun(n):
     if n==1:
         return 1
     return n+fun(n-1)
-print(fun(10))
+print(fun(10)) #Time Complexity in Functional recursion is O(N)
+               #Space Complexity in  Functional recursion is O(N) (Stack Space)
 
 
 """Printing Factorial of N natural numbers"""
