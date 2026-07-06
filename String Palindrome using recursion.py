@@ -9,7 +9,7 @@ def pali(n,l,r):
     return pali(n,l+1,r-1)
 
 print(pali(s,0,len(n)-1)==list(n))
-
+#Time Complexity is O(N+N/2) , space complexity O(N)
 
 ''' Using Index checking '''
 
@@ -25,6 +25,7 @@ while left<right:
     right-=1
 else:
     print(True)
+#Time Complexity is O(N/2) and space complexity O(1)
     
 #Using Recursion
 
@@ -35,3 +36,5 @@ def func(n,left,right):
         return False
     return func(n,left+1,right-1)
 print(func(n,left,right))
+
+#Time Complexity is O(N/2) and space complexity O(N/2){Stack Space}
