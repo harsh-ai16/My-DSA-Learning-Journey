@@ -27,8 +27,8 @@ else:
     print(True)
 #Time Complexity is O(N/2) and space complexity O(1)
     
-#Using Recursion
 
+#Using Recursion
 def func(n,left,right):
     if left>=right:
         return True
