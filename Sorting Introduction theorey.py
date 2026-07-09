@@ -12,8 +12,8 @@ def sort(n):
 sort(n)
 print(n)
 
-#Desending Sort
 
+#Desending Sort
 def sort(n):
     for i in range (0,len(n)):
         mid_index=i
@@ -23,3 +23,5 @@ def sort(n):
         n[i],n[mid_index]=n[mid_index],n[i]
 sort(n)
 print(n)
+
+#Time Complexity is O(N²) and Space Complexity is O(1)
