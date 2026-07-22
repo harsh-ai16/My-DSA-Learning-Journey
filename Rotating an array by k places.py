@@ -4,9 +4,15 @@
 nums = [3, 1, 5, 2, 3, 7, 5, 8, 1, 9]
 k=int(input("the places to be shift"))
 n=len(nums)
-nums1=nums[n-1:n-(k+1):-1]+nums[0:n-k]
+k%=n
+
+nums1=nums[n-(k):n]+nums[0:n-k]
 print(nums1)
 
 
 #Using Loop
-for i in range()
+temp=nums[n-(k):n]
+for i in range(n-(k+1),-1,-1):
+    nums[i+k]=nums[i]
+nums[0:k]=temp
+print(nums)
