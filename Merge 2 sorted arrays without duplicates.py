@@ -22,15 +22,16 @@ while i<len(arr1) and j<len(arr2):
             newlist.append(arr2[j])
         j+=1
 
-if i<len(arr1):
-    s1=set(arr1[i:len(arr1)])
-    for x in s1:
-        newlist.append(x)
+while i<len(arr1):
+    if arr1[i]!=newlist[-1]:
+        newlist.append(arr1[i])
+    i+=1
+        
         
 
 if j<len(arr2):
-    s2=set(arr2[j:len(arr2)])
-    for y in s2:
-        newlist.append(y)
+    if arr2[j]!=newlist[-1]:
+            newlist.append(arr2[j])
+    j+=1
 
 print(newlist)
