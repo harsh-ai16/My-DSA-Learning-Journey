@@ -24,3 +24,4 @@ def twosum(nums,target):
         d[nums[i]]=i
 
 print(twosum(nums,target))
+# Time Complexity is O(N) and space complexity is O(N)
