@@ -18,6 +18,8 @@ class Solution(object):
                 if rowtrack[i]==-1 or columntrack[j]==-1:
                     matrix[i][j]=0
                     
+# Brute force approach 
+
                 
         
         
