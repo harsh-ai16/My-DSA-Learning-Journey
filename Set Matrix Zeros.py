@@ -17,6 +17,7 @@ class Solution(object):
             for j in range(column):
                 if rowtrack[i]==-1 or columntrack[j]==-1:
                     matrix[i][j]=0
+# Time complexity is O(N*M) and space complexity is O(N+M) :. N,M are rows, columns
                     
 # Brute force approach 
 
