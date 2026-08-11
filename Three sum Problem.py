@@ -16,8 +16,8 @@ def _3sumbrute():
 print(_3sumbrute())
 # Time Complexity is O(N³) and Space xomplexity is O( Number of triplets)
 
-# Better approach (using two pointers )
 
+# Better approach (using two pointers )
 def _3sumbetter():
     resultant=set()
     for i in range(n):
@@ -32,3 +32,33 @@ def _3sumbetter():
     return [list(ans) for ans in resultant]
 print(_3sumbetter())
 # Time complexity is O(N²) and space complexity is O(N + Number of triplets)
+
+
+# Optimal Approach 
+def _3sumoptimal():
+    result=[]
+    nums.sort()
+    for i in range(n):
+        if i!=0 and nums[i]==nums[i-1]:
+            continue
+        j=i+1
+        k=n-1
+        while j<k:
+            total=nums[i]+nums[j]+nums[k]
+            if total<0:
+                j+=1
+            elif total>0:
+                k-=1
+            else:
+                temp=[nums[i],nums[j],nums[k]]
+                result.append(temp)
+                j+=1
+                k-=1
+                while j<k and nums[j]==nums[j-1]:
+                    j+=1
+                while j<k and nums[k]==nums[k+1]:
+                    k-=1
+    return result
+print(_3sumoptimal())
+# Time complexity is O( Nlog(N) + N² ) and space complexity is O(1)
+   
